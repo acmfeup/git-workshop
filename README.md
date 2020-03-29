@@ -6,7 +6,7 @@
 
 This `git` workshop was created to run on a distributed [**JupyterHub**](https://jupyter.org/hub) instance, where each user has its own computational environments and resources without the burden of installation and maintenance tasks, bringing the power of [**Jupyter**](https://jupyter.org/) to a group of users at the same time.
 
-Our deployment, due to the required low number of users per instance, used [**The Littlest JupyterHub**](https://github.com/jupyterhub/the-littlest-jupyterhub) (TLJH) in [**GCP**](https://cloud.google.com/) (Google Cloud Platform) and used [**bash_kernel**](https://github.com/takluyver/bash_kernel) to enable a Jupyter kernel for bash.
+Our deployment, due to the required low number of users per instance, used [**The Littlest JupyterHub**](https://github.com/jupyterhub/the-littlest-jupyterhub) (TLJH) in [**GCP**](https://cloud.google.com/) (Google Cloud Platform) and used [**bash_kernel**](https://github.com/takluyver/bash_kernel) to enable a Jupyter kernel for `bash`.
 
 ## Deployment
 
@@ -35,3 +35,9 @@ sudo ln -s /srv/data/git-workshop/messy_files messy_files
 sudo ln -s /srv/data/git-workshop/workshop.ipynb workshop.ipynb
 ```
 
+Lastly, TLJH has the classic Jupyter Notebook interface, however, since, for git, folder and repository management is something very important, JupiterLab is a better alternative due to the visibility of the file system. Thankfully, [JupiterLab](http://jupyterlab.readthedocs.io/en/stable/) (along with [nteract](https://nteract.io/)) are also shipped with TLJH by default. One can try them temporarily, by accessing them through the change of `/tree` to `/lab` or `/nteract`, and, after validation, change the default interface whenever one logins by running the following:
+
+```bash
+sudo tljh-config set user_environment.default_app jupyterlab
+sudo tljh-config reload hub
+```
