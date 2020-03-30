@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/js1.js" defer></script>
+    <script src="js/js2.js" defer></script>
+    <link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <title>neACM Git workshop</title>
+</head>
+<body>
+    <div id="header">
+        <img src="https://seeklogo.com/images/A/acm-logo-0E4647935C-seeklogo.com.png" alt="ACM_ChapterLogo">
+        <h1>Learning Git with neACM</h1>
+    </div>
+
+    <div id="info">
+        <p>
+            In this workshop I have learned to use Git at a beginner to intermediate level.
+            I completed the following steps:
+        </p>
+        <ul>
+            <li>Create an empty repository</li>
+            <li>Understand what is a working tree and the index</li>
+            <li>Stage and unstage changes to/form the index</li>
+            <li>View the repository history using the log command</li>
+            <li>Manage branches and resolve merges conflicts</li>
+            <li>Work with remote repository storage using ssh keys</li>
+        </ul>
+        
+        <form onsubmit="confirm()">
+            <input type="text" id="participantName" placeholder="Your name">
+            <button>Finish</button>
+        </form>
+    </div>
+
+    <div id="certificate" hidden>
+        <h1>Thanks for participating!</h1>
+        <blockquote id="certificateText">
+            ${participantName},<br>
+            neACM thanks you for your participation in this edition of our Git workshop.<br>
+            We sincerely hope you had fun and feel like you can now make use of Git as your daily code versioning tool.<br>
+            <br>
+            Plase give us your feedback: (placeholder)<br>
+            <br>
+            <br>
+            If you don't want to miss out next activities, follow us!<br>
+            Facebook: <a href="https://www.facebook.com/acmfeup" target="_blank" rel="noopener noreferrer">/acmfeup</a><br>
+            Instagram: <a href="https://www.instagram.com/acmfeup/" target="_blank" rel="noopener noreferrer">@acmfeup</a><br>
+            LinkedIn : <a href="https://www.linkedin.com/company/acmfeup" target="_blank" rel="noopener noreferrer">company/acmfeup</a><br>
+            GitHub : <a href="https://www.linkedin.com/company/acmfeup" target="_blank" rel="noopener noreferrer">@acmfeup</a>
+        </blockquote>
+    </div>
+</body>
