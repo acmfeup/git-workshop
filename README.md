@@ -1,6 +1,6 @@
 # ACM `git` Workshop
 
-**WIP**: An interactive Git workshop for the ultimate novice.
+An interactive Git workshop for the ultimate novice. You can check it out [here](https://github.com/acmfeup/git-workshop/blob/master/workshop.ipynb).
 
 ![git](https://git-scm.com/images/logo@2x.png) <img src="https://jupyter.org/assets/hublogo.svg" width="250"/>
 
